@@ -18,10 +18,16 @@ void main(){
 
     print("\n\nLibros por anio de publicacion");
     miEstante.por_anioPublicacion(1813);
-
+    
+    
     print ("\n\nlibros por autor");
-    miEstante.buscarLibro("James Joyce");
-    print("\n\nEliminar libro");
+    miEstante.buscarLibro("James Joyce"); 
+    
+
+    print("\n\nEliminar libro despues del eliminar");
+    miEstante.deletelibro(libro_3);
+     print("Libros de mi biblioteca\n $miEstante");
+
 }
 
 class Libro {
@@ -54,7 +60,7 @@ class Bibblioteca{
         for (int i=0; i<libros.length; i++){
             if (libros[i].autor == autor){
                 print(libros[i]);
-            };
+            }
         }
     }
     void por_anioPublicacion(int anioPublicacion){
